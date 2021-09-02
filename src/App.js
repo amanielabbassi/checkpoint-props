@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-
+import ListeProfile from './components/ListeProfil';
+const liste =[
+  {
+    name: "amani elabbassi", 
+    bio :"peace & love",
+    profession:"Expert cyber security",
+  }
+]
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+     <ListeProfile profil={liste}/>
+</div>
+ );
+ }
+ 
 export default App;
